@@ -1,0 +1,34 @@
+#titulo {
+    background-color: #F00;
+}
+
+p {
+    border: 5px groove #0000FF; /* BORDA (largura, tipo borda, cor)    
+    SOLID: sólida
+    DOTTED: pontilhada
+    DASEH: traço
+    DOUBLE:2 traços
+    GROOVE: solid mais escura
+
+    border-bottom: borda em baixo;
+    border-top: borda em cima;
+    border-left: borda na esquerda;
+    border-right: borda na direita;
+
+    BORDA ARREDONDADA
+    border-radius: 5px;
+    */
+}
+
+div { /* CRIANDO CIRCULO */
+    background-color: #00FF00;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border:3px solid darkgreen;
+}
+
+img {
+    border: 5px solid #FF0000;
+    border-radius: 5px;
+}

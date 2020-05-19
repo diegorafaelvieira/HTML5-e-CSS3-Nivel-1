@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.link {
+    color:#00FF00;
+    font-size: 30px;
+}
+
+.link:hover { /*MOUSE EM CIMA*/
+    color:#FF0000;
+
+}
+
+.link:visited { /*LINK JA ACESSADO */
+    color: pink;
+}

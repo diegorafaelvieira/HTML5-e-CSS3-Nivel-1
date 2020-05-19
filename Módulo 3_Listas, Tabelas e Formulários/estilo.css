@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #0000FF; /*mudar cor texto*/
+    font-size: 30px; /*tamanho fonte */
+    font-weight: bold; /* negrito */
+    font-family: Helvetica, Arial; /*fonte texto*/
+    text-align: justify; /*alinhamento texto*/
+}
+
+a {
+    text-decoration: none;/*texto sem decoração*/
+
+}
+
+a:hover {
+    text-decoration: underline; /*mouse sobre texto*/
+}

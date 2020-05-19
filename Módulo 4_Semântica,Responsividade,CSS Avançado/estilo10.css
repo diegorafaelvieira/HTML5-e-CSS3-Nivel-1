@@ -1,0 +1,25 @@
+/* Animações */
+@keyframes exemplo {
+    0% {background-color: red;top: 0;left: 0;}
+    25%{background-color: yellow;top: 0;left: 200;}
+    50%{background-color: blue;top: 200;left: 200;}
+    75%{background-color: green;top: 200;left: 0;}
+    100%{background-color: red;top: 0;left: 0;}
+}
+
+
+body {
+     margin: 0;
+ }
+
+ .exemplo {
+     width: 150px;
+     height: 150px;
+     background-color: red;
+     position: absolute;
+     animation-name: exemplo; /*nome da animação*/
+     animation-duration: 4s; /*duração da animação*/
+     animation-delay: 2s; /*aguarda 2 segundos paracomeçar a animação*/
+     animation-iteration-count: 3; /*repete a animação 3 vezes | infinite caso loop infinito*/
+ }
+

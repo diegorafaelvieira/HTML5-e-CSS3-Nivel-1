@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    word-wrap: break-word;/* Quebra a palavra | normal ou break-word(quebra a palavra)*/
+}

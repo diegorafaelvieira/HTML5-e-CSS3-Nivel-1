@@ -1,0 +1,658 @@
+---> FORMATAÇÃO TEXTOS NO CSS (1/1)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+
+    <p><a href="https://www.lipsum.com">Lorem ipsum </a> dolor sit, amet consectetur adipisicing elit. Quas repudiandae nemo sapiente architecto facilis vero provident labore, illum ut soluta ducimus nam, facere itaque similique ipsum a odio voluptates praesentium!</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus praesentium commodi exercitationem ducimus! Nam soluta quisquam laudantium est saepe dolor? Architecto, ex veniam praesentium necessitatibus nemo sit corrupti suscipit!</p>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, mollitia! Pariatur mollitia reiciendis rerum cumque illo non hic consequatur, minus voluptatibus magni iusto reprehenderit dolorum! Dignissimos vero minus facilis praesentium.</p>
+</body>
+</html>
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #0000FF; /*mudar cor texto*/
+    font-size: 30px; /*tamanho fonte */
+    font-weight: bold; /* negrito */
+    font-family: Helvetica, Arial; /*fonte texto*/
+    text-align: justify; /*alinhamento texto*/
+}
+
+a {
+    text-decoration: none;/*texto sem decora��o*/
+
+}
+
+a:hover {
+    text-decoration: underline; /*mouse sobre texto*/
+}
+
+
+---> FORMATAÇÃO TEXTOS NO CSS (2/2)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link rel="stylesheet" href="estilo2.css" />
+</head>
+<body>
+
+    <h1>Página de teste</h1>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error maxime, assumenda sunt, pariatur fugiat vel dolorum aliquid optio corporis tempora iusto architecto consectetur. Modi ipsum natus consectetur iure repellendus animi!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus enim ullam omnis cupiditate eius odio nisi, iusto fugit dignissimos facilis aliquam sunt voluptates esse pariatur nesciunt totam tempora, porro numquam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis porro omnis doloremque veritatis. Ex aperiam, saepe quisquam doloremque voluptatem deleniti blanditiis maxime odit explicabo repellat mollitia beatae nobis doloribus. Consectetur?</p>
+
+</body>
+</html>
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+}
+
+p {
+    color: #0000FF;
+    font-size: 20px;
+    font-family: Helvetica;
+    text-align: left;
+    text-transform: uppercase; /*texto maiusculo*/
+    letter-spacing: 5px; /*espa�o entre as letras*/
+    word-spacing: 20px; /*espa�o entre palavras */
+    line-height: 30px; /*altura da linha*/
+    text-shadow: 0px 2px 3px #FF0000;/*sombra no texto-> |dist�ncia direita sombra|pra baixo vai a letra|espa�o de esfuma�amento da cor|cor da sombra|*/
+}
+
+
+
+---> ADICIONANDO FONTES EXTERNAS
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo3.css" />
+</head>
+<body>
+
+    <h1>Página de teste</h1>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error maxime, assumenda sunt, pariatur fugiat vel dolorum aliquid optio corporis tempora iusto architecto consectetur. Modi ipsum natus consectetur iure repellendus animi!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus enim ullam omnis cupiditate eius odio nisi, iusto fugit dignissimos facilis aliquam sunt voluptates esse pariatur nesciunt totam tempora, porro numquam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis porro omnis doloremque veritatis. Ex aperiam, saepe quisquam doloremque voluptatem deleniti blanditiis maxime odit explicabo repellat mollitia beatae nobis doloribus. Consectetur?</p>
+
+</body>
+</html>
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #0000FF;
+    font-size: 20px;
+    font-family: 'Chilanka';
+}
+
+
+h1 {
+    font-family: 'Indie Flower';
+}
+
+
+
+---> LISTAS NO HTML 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo4.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+
+    <ul>
+        <li>Café</li>
+        <li>
+            Chá    <!--LISTA DENTRO DE OUTRA LISTA-->
+            <ul style="list-style: circle;">  <!--UL -> Lista desordenada list-style: circle/square/none-->
+                <li>Chá Preto</li>             <!--OL -> Lista ordenada type: 1/A/a/I/i-->
+                <li>Chá Verde
+                    <ul>
+                        <li>Tipo 1</li>
+                        <li>Tipo 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Leite</li>
+    </ul>
+    
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #0000FF;
+    font-size: 20px;
+    font-family: 'Chilanka';
+}
+
+
+h1 {
+    font-family: 'Indie Flower';
+}
+
+
+---> TABELAS NO HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo4.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <table width="400" border="1">
+        <thead> <!-- LINHA CABEÇALHO -->
+            <tr> <!-- TR = linha-->  
+                <th>Item 1</th> <!-- TH = Cabeçalho-->
+                <th>Item 2</th>
+                <th>Item 3</th>
+            </tr>
+        </thead>
+
+
+        <tbody> <!-- LINHA CORPO-->
+            <tr>    
+                <td>...</td> <!--TD = coluna-->
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>
+
+
+---> TABELAS NO CSS
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <table border="0">
+        <thead> <!-- LINHA CABEÇALHO -->
+            <tr> <!-- TR = linha-->  
+                <th>Item 1</th> <!-- TH = Cabeçalho-->
+                <th>Item 2</th>
+                <th>Item 3</th>
+            </tr>
+        </thead>
+
+
+        <tbody> <!-- LINHA CORPO-->
+            <tr>    
+                <td>...</td> <!--TD = coluna-->
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+
+
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+
+h1 {
+    font-family: 'Indie Flower';
+}
+
+
+
+---> FORMULÁRIOS
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="POST"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+
+h1 {
+    font-family: 'Indie Flower';
+}
+
+
+---> INPUT
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="GET"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+        <input type="text" name="usuario" value="Diego"/> <br/><br/>
+        <input type="email" /> <br/><br/>
+        <input type="password" /> <br/><br/>
+        <input type="checkbox" /> CHECAR <br/><br/>
+        <input type="radio" name="sexo" /> M
+        <input type="radio" name="sexo" > F <!-- USAR O MESMO NOME PRA ESCOLHER APENAS 1--> <br/><br/>
+        <input type="submit" value="Cadastrar"/>
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+</body>
+</html>
+
+
+---> INPUTS NO HTML5
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="GET"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+      <input type="color" /> <br/><br/>
+      <input type="date" /> <br/><br/>
+      <input type="datetime-local" /> <br/><br/>
+      <input type="month" /> <br/><br/>
+      <input type="number" /> <br/><br/>
+      <input type="range" /> <br/><br/>
+      <input type="search" /> <br/><br/>
+      <input type="tel" /> <br/><br/>
+      <input type="time" /> <br/><br/>
+      <input type="url" /> <br/><br/>
+      <input type="week" /> <br/><br/>
+      <input type="submit" value="Cadastrar" />
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+</body>
+</html>
+
+
+---> SELECT
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="GET"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+
+        <select name="order" size="2" multiple>
+            <option value="" selected></option> <!--Opção selecionada-->
+            <option value="bestseller">Mais vendidos</option>
+            <option value="last">Recentes</option>
+        </select> 
+        
+        <br/><br/>
+
+        <input type="submit" />
+
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+</body>
+</html>
+
+
+---> TEXTAREA
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="GET"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+
+        <textarea name="descricao" style="width: 400px; height: 200px;"></textarea> <!--CAMPO MULTIPLAS LINHAS-->
+
+        <input type="submit" />
+
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+</body>
+</html>
+
+
+---> BUTTON
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="GET"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+
+        <button>Texto do botão</button>
+
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+</body>
+</html>
+
+
+---> LABEL
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo5.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="GET"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+
+        <label for="nome">Nome completo 1:</label> <br/>
+        <input type="text" name="nome" id="nome"/> <br/><br/>
+
+        <label>Nome completo 2: <br/>
+            <input type="text" name="nome2" />
+        </label> <br/><br/>
+
+        <label>
+            <input type="checkbox" />
+            Eu declaro que li e aceito os termos de uso.
+        </label>
+
+
+
+        <button>Cadastrar</button>
+
+    </form>
+
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
+</body>
+</html>
+
+
+
+---> FORMATANDO FORMULARIOS NO CSS
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página teste</title>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo6.css" />
+</head>
+<body>
+
+    <h1>Página teste</h1>
+    
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="GET"> <!--FORM = FORMULARIO | PRA ONDE SE ENVIA INFORMAÇÕES | MÉTODO DE ENVIO = GET/POST -->
+
+        <label>
+            Nome Completo: <br/>
+            <input type="text" name="nome">
+        </label>
+
+
+        <label>
+            Descrição: <br/>
+            <textarea name="descricao" id="" ></textarea>
+        </label>
+
+       
+
+        <label>
+            Categoria: <br/>
+            <select name="categoria">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+                <option value="5">Categoria 5</option>
+            </select>
+        </label>
+
+        
+
+        <label>
+            <input type="checkbox" />
+            Eu declaro que li e aceito os <a href="paginas/termos.html" target="_blank" class="termoslink"> termos de uso.</a>
+        </label>
+
+        <button>Cadastrar</button>
+
+
+    </form>
+
+    
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+label {
+    display: block; /* um abaixo do outro*/
+    margin-bottom: 20px;
+}
+
+input[type=text], textarea, select {
+    padding: 10px;
+    width: 500px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    outline: 0; /* tira a cor da borda quando selecionada */
+    margin-top: 5px;
+}
+
+textarea {
+    height: 200px;
+    resize: none; /* não mexer no tamanho do campo*/
+}
+
+.termoslink {
+    color: #000;
+    text-decoration: none;
+}
+
+.termoslink:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+}
+
+button:hover {
+    background-color: #DDD;
+}

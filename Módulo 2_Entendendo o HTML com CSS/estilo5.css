@@ -1,0 +1,29 @@
+body {
+    margin: 0px; /* eliminar margin do CORPO colado na tela */
+}
+
+.exemplo {
+    border: 1px solid #00FF00;
+    /*padding: 10px; TODOS OS LADOS*/
+    /*margin: 20px; */
+    /*padding-left: 20 px; /*ESPAÇAMENTO NA ESQUERDA*/   
+    /*padding-top: 50px; /*ESPAÇAMENTO EM CIMA*/
+    padding: 10px 50px 10px 50px; /*CIMA DIREITA BAIXO ESQUERDA
+    /*padding: 10px 50px; /*CIMA/BAIXO  DIREITA/ESQUERDA 
+    /* O MESMO VALE PARA O MARGIN */  
+}
+
+/*
+
+    MARGIN: espaçamento externo do elemento AFASTAR
+    PADDING: espaçamento interno do elemento RESPIRO
+
+                        MARGIN
+                        BORDER
+                        PADDING
+  MARGIN BORDER PADDING CONTEÚDO PADDING BORDER MARGIN
+                        PADDING
+                        BORDER
+                        MARGIN
+
+*/

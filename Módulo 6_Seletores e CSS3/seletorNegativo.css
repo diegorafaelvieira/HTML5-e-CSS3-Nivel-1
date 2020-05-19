@@ -1,0 +1,4 @@
+/*Seleciona todos os elementos menos o p*/
+body :not(p) {
+  background-color: red;
+}

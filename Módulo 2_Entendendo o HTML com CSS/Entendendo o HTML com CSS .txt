@@ -1,0 +1,632 @@
+﻿---> TAGS BÁSICAS (1/1)
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+    </head>
+    <body><!--CORPO-->
+        <h1>Título da página</h1><!--TÍTULO-->
+        <h2>Sub-título da página</h2>
+        <h3>Sub sub-título da página</h3>
+        <h6>Sub-título da página</h6> <!--Quanto maior o número menor o tamanho-->
+        <p>Era uma vez,...</p><!--PARAGRAFO-->
+        <p>E aconteceu blablabla</p>
+        <a href="https://www.google.com.br">Ir para site Google</a><!-- Âncora/Link -->
+        
+    </body>
+</html>
+
+
+
+
+----> TAGS BÁSICAS (1/2)
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+    </head>
+    <body><!--CORPO-->
+        <h1>Título da página</h1><!--TÍTULO-->
+        <h2>Sub-título da página</h2>
+        <h3>Sub sub-título da página</h3>
+        <h6>Sub-título da página</h6> <!--Quanto maior o número menor o tamanho-->
+        <p>Era uma vez,...</p><!--PARAGRAFO-->
+        <p>E aconteceu blablabla</p>
+        <a href="https://www.google.com.br">Ir para site Google</a><!-- Âncora/Link -->
+        <br/><!--QUEBRAR LINHA-->        
+        <img src="https://www.google.com.br/google.jpg" alt="Logo do Google"/><!-- EXIBIR IMAGEM / TEXTO IMAGEM-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+        <button>Clique em mim</button><!--BOTÃO-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+
+        <h3>Lista de bolo DESORDENADA:</h3>
+        <ul><!-- LISTA DESORDENADA-->
+            <li>Farinha</li> <!--ITEM lista-->
+            <li>Ovo</li>
+            <li>Sal</li>
+            <li>Corante</li>
+        </ul>
+        <br/>
+        <h3>Lista de bolo ORDENADA:</h3>
+        <ol><!-- LISTA ORDENADA-->
+            <li>Farinha</li> <!--ITEM lista-->
+            <li>Ovo</li>
+            <li>Sal</li>
+            <li>Corante</li>
+        </ol>
+
+    </body>
+</html>
+
+--->O que é e como usar o CSS? (1/2)
+3 formas de inserção do CSS no HTML:
+- CSS inline    style na TAG
+- CSS interno   código CSS em um único local
+- CSS externo   criar novo arquivo externo
+
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+    </head>
+    <body><!--CORPO-->
+        <h1 style="color:red; font-size: 14px;">Título da página</h1><!--TÍTULO--> <!--CSS inline-->
+        <h2>Sub-título da página</h2>
+        <h3>Sub sub-título da página</h3>
+        <h6>Sub-título da página</h6> <!--Quanto maior o número menor o tamanho-->
+        <p>Era uma vez,...</p><!--PARAGRAFO-->
+        <p>E aconteceu blablabla</p>
+        <a href="https://www.google.com.br" style="font-size: 30px;">Ir para site Google</a><!-- Âncora/Link --> <!--CSS inline-->
+        <br/><!--QUEBRAR LINHA-->        
+        <img src="https://www.google.com.br/google.jpg" alt="Logo do Google" style="width: 100px;"/><!-- EXIBIR IMAGEM / TEXTO IMAGEM--> <!--CSS inline-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+        <button>Clique em mim</button><!--BOTÃO-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+
+        <h3>Lista de bolo DESORDENADA:</h3>
+        <ul><!-- LISTA DESORDENADA-->
+            <li>Farinha</li> <!--ITEM lista-->
+            <li>Ovo</li>
+            <li>Sal</li>
+            <li>Corante</li>
+        </ul>
+        <br/>
+        <h3>Lista de bolo ORDENADA:</h3>
+        <ol><!-- LISTA ORDENADA-->
+            <li>Farinha</li> <!--ITEM lista-->
+            <li>Ovo</li>
+            <li>Sal</li>
+            <li>Corante</li>
+        </ol>
+
+    </body>
+</html>
+
+
+---> O que é e como usar o CSS? (2/2)
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+        <link rel="stylesheet" href="estilo.css" /> <!--CSS Externo-->
+        <!--
+        <style> /* CSS INTERNO */
+            h1 {
+                 color:blue; 
+                 font-size: 15px;
+               } 
+            a {
+                color: green;
+                font-size: 30px;
+            }
+            img {
+                width: 200px;
+            }
+            li {
+                font-weight: bold; /*NEGRITO*/
+                color:blueviolet;
+            }
+        </style>
+        -->
+    </head>
+    <body><!--CORPO-->
+        <h1>Título da página</h1><!--TÍTULO--> <!--CSS inline-->
+        <p>Era uma vez,...</p><!--PARAGRAFO-->
+        <a href="https://www.google.com.br" >Ir para site Google</a><!-- Âncora/Link --> <!--CSS inline-->
+        <br/><!--QUEBRAR LINHA-->        
+        <img src="https://www.google.com.br/google.jpg" alt="Logo do Google" /><!-- EXIBIR IMAGEM / TEXTO IMAGEM--> <!--CSS inline-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+        <button>Clique em mim</button><!--BOTÃO-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+
+        <h3>Lista de bolo DESORDENADA:</h3>
+        <ul><!-- LISTA DESORDENADA-->
+            <li>Farinha</li> <!--ITEM lista-->
+            <li>Ovo</li>
+            <li>Sal</li>
+            <li>Corante</li>
+        </ul>
+        <br/>
+        <h3>Lista de bolo ORDENADA:</h3>
+        <ol><!-- LISTA ORDENADA-->
+            <li>Farinha</li> <!--ITEM lista-->
+            <li>Ovo</li>
+            <li>Sal</li>
+            <li>Corante</li>
+        </ol>
+
+    </body>
+</html>
+/* CSS EXTERNO */
+h1 {
+    color:blue; 
+    font-size: 15px;
+} 
+           
+a {
+    color: green;
+    font-size: 30px;
+}
+
+img {
+    width: 200px;
+}
+
+li {
+    font-weight: bold; /*NEGRITO*/
+    color:blueviolet;
+}
+
+
+
+---> A base geral do CSS
+NOME_DO_ELEMENTO {
+
+}
+
+#ID_DO_ELEMENTO {
+
+}
+
+.CLASS_DO_ELEMENTO {
+
+}
+
+ELEMENTO, OUTROELEMENTO {
+
+}
+
+ELEMENTO OUTROELEMENTO { aplica só no outroelemento
+
+}
+
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+        <link rel="stylesheet" href="estilo2.css" /> <!--CSS Externo-->
+    </head>
+    <body><!--CORPO-->
+        <h1 id="titulo">Título da página</h1><!--TÍTULO--> <!--CSS inline-->
+        <p class="texto">Era uma vez,...</p><!--PARAGRAFO-->
+        <a class="texto" href="https://www.google.com.br" >Ir para site Google</a><!-- Âncora/Link --> <!--CSS inline-->
+        <br/><!--QUEBRAR LINHA-->        
+        <img src="https://www.google.com.br/google.jpg" alt="Logo do Google" /><!-- EXIBIR IMAGEM / TEXTO IMAGEM--> <!--CSS inline-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+        <button class="texto">Clique em mim</button><!--BOTÃO-->
+        <br/><br/><!--QUEBRAR 2 LINHAS-->
+
+        <h1>Lista de bolo ORDENADA:</h1>
+        <ol><!-- LISTA ORDENADA-->
+            <li>Farinha</li> <!--ITEM lista-->
+            <li>Ovo</li>
+            <li class="texto">Sal</li>
+            <li>Corante</li>
+        </ol>
+
+    </body>
+</html>
+
+
+/* SELECIONA TODOS OS H1 */
+/*
+h1 { 
+    color: black;
+} 
+
+/*
+img {
+    width: 200px;
+}
+
+
+/* SELECIONA APENAS O H1 ID titulo*/ /* ID só pode ter 1 elemento com esse título */
+/*
+#titulo {
+    color: green;
+}
+/* SELECIONAR POR CLASS*/ /* CLASS pode ter quantos elementos desejar */
+/*
+.texto {
+    color: red;
+}
+
+
+
+/* SELEÇÃO GERAL DOS ITENS */
+#titulo,
+.texto {
+    color:blue;
+    font-size: 25px;;
+}
+
+#titulo {
+    font-weight: normal;
+}
+
+.texto {
+    font-weight: bold;
+}
+
+/* SELECIONAR 1 ITEM DENTRO DE OUTRO ITEM */
+ol li { /* só coloca no elemento li */
+    color: pink;
+}
+
+
+
+---> CORES NO CSS
+#titulo {
+    /* background-color:rgb(0, 0, 0) ; cor fundo RGB*/
+    /* color: rgb(100, 50, 200); cor fonte RGB*/
+    background-color: rgb(20, 187, 76); /* cor fundo HEXADECIMAL*/
+
+    /*
+    RGB 0 a 255
+    RED = vermelho
+    GREEN = verde
+    BLUE = azul
+    
+    HEXACIMAL (6) 0 a 9 / A a F
+    2 = vemelho  
+    2 = verde
+    2 = azul
+    */
+
+}
+
+
+
+---> BORDAS NO CSS
+#titulo {
+    background-color: #F00;
+}
+
+p {
+    border: 5px groove #0000FF; /* BORDA (largura, tipo borda, cor)    
+    SOLID: sólida
+    DOTTED: pontilhada
+    DASEH: traço
+    DOUBLE:2 traços
+    GROOVE: solid mais escura
+
+    border-bottom: borda em baixo;
+    border-top: borda em cima;
+    border-left: borda na esquerda;
+    border-right: borda na direita;
+
+    BORDA ARREDONDADA
+    border-radius: 5px;
+    */
+}
+
+div { /* CRIANDO CIRCULO */
+    background-color: #00FF00;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border:3px solid darkgreen;
+}
+
+img {
+    border: 5px solid #FF0000;
+    border-radius: 5px;
+}
+
+
+
+
+
+---> MARGINS E PADDING NO CSS
+body {
+    margin: 0px; /* eliminar margin do CORPO colado na tela */
+}
+
+.exemplo {
+    border: 1px solid #00FF00;
+    /*padding: 10px; TODOS OS LADOS*/
+    /*margin: 20px; */
+    /*padding-left: 20 px; /*ESPAÇAMENTO NA ESQUERDA*/   
+    /*padding-top: 50px; /*ESPAÇAMENTO EM CIMA*/
+    padding: 10px 50px 10px 50px; /*CIMA DIREITA BAIXO ESQUERDA
+    /*padding: 10px 50px; /*CIMA/BAIXO  DIREITA/ESQUERDA 
+    /* O MESMO VALE PARA O MARGIN */  
+}
+
+/*
+
+    MARGIN: espaçamento externo do elemento AFASTAR
+    PADDING: espaçamento interno do elemento RESPIRO
+
+                        MARGIN
+                        BORDER
+                        PADDING
+  MARGIN BORDER PADDING CONTEÚDO PADDING BORDER MARGIN
+                        PADDING
+                        BORDER
+                        MARGIN
+
+*/
+
+
+---> WIDTH/HEIGHT NO CSS
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+        <link rel="stylesheet" href="estilo6.css" /> <!--CSS Externo-->
+    </head>
+    <body><!--CORPO-->
+        <div class="exemplo">
+            <img src="https://www.google.com.br/google.jpg" alt="" />
+        </div>
+
+    </body>
+</html>
+
+
+body {
+    margin: 0px;
+}
+
+.exemplo {
+    background-color: #000000;
+    width: 500px;
+    height: 500px;
+}
+
+img {
+    width: inheritS; /* inherit = herança do anterior */
+    max-width: 450px; /* TAMANHO MÁXIMO  */
+    /* min-width: 500px; /* TAMANHO MÍNIMO */ 
+    /*  MÍNIMO E MÁXIMO POSSUEM A PREFERÊNCIA */
+}
+
+
+
+--->DICAS SOBRE WIDTH / HEIGHT
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+        <link rel="stylesheet" href="estilo7.css" /> <!--CSS Externo-->
+    </head>
+    <body><!--CORPO-->
+        <div class="exemplo">
+           
+        </div>
+
+    </body>
+</html>
+
+/* Aplicar efeito de para todos   */
+*{
+    box-sizing: border-box; 
+    /*content-box: TAMANHO NÃO INCLUI PADDING E O BORDER
+     border-box: TAMANHO INCLUI O PADDING E O BORDER
+    */
+}
+
+body {
+    margin: 0px;
+}
+
+.exemplo {
+    background-color: #00FF00;
+    width: 400px;
+    height: 400px;
+    border: 5px solid #000000;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+---> LINKS (1/2)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Página de título</title>
+        <link rel="stylesheet" href="estilo8.css">
+    </head>
+    <body>
+
+        <h1>Página de Teste</h1>
+
+        <a href="Login.html" target="_blank" title="Página de Login">Fazer Login</a> 
+        <!--TARGET _blank  abre em outra aba do navegador-->
+        <!-- title   exibe o nome da página no link-->
+
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Página de título</title>
+        <link rel="stylesheet" href="estilo8.css">
+    </head>
+    <body>
+
+        <h1>Página de Login</h1>
+
+        <a href="Links 1.html">Links 1</a>
+
+    </body>
+</html>
+
+
+
+
+---> LINKS (2/2)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Página de título</title>
+        <link rel="stylesheet" href="estilo8.css">
+    </head>
+    <body>
+
+        <a href="Login.html" class="link">Ir para Login</a>
+        <br/>
+        <a href="#area5">Ir para área 5</a>
+
+        <h1>Página de Teste</h1>
+        <img 2 src="https://www.google.com.br/google.jpg" />
+
+        <h2 id="area2">Área 2</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+
+        <h2 id="area2">Área 3</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+
+        
+        <h2 id="area3">Área 3</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+        
+
+        <h2 id="area4">Área 4</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+
+
+        <h2 id="area5">Área 5</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+
+
+        <h2 id="area6">Área 6</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+
+        <h2 id="area7">Área 7</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+        
+        
+        <h2 id="area8">Área 8</h2>
+        <img src="https://www.google.com.br/google.jpg" />
+        
+        <!--
+            <a href="https://www.google.com.br" >
+            
+            <br/>
+            Ir para o site do Google
+        </a> 
+
+        -->
+        
+    </body>
+</html>
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.link {
+    color:#00FF00;
+    font-size: 30px;
+}
+
+.link:hover { /*MOUSE EM CIMA*/
+    color:#FF0000;
+
+}
+
+.link:visited { /*LINK JA ACESSADO */
+    color: pink;
+}
+
+
+--->  FORMATAÇÃO DE TEXTOS NO HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilo9.css"/>
+</head>
+<body>
+
+    <!-- TAGS
+    <b> e <i> = NEGRITO = SEM SEMÂNTICA DE IMPORTÂNCIA
+    <strong> e <em> = NEGRITO = SEMÂNTICA DE IMPORTÂNCIA
+    <del> = RISCO EM CIMA DA PALAVRA
+    <mark> = DESTACAR PALAVRA amarelo
+    <sup> = ° pra cima
+    <sub> = ° pra baixo         
+    -->
+
+    <del>Texto</del> <b>qualquer</b> <i>para</i> usar <em>como</em> <strong>exemplo</strong> deste 1<sup>o</sup> <mark>curso</mark>. 
+    <br/>
+    <small>Essa é a 2<sub>o</sub> frase para exemplificar.</small> <!--TAG TEXTO MENOR-->
+    
+
+
+
+</body>
+</html>
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+
+
+--->  COMENTÁRIOS NO HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo10.css" />
+</head>
+<body>
+
+    <h1>Página de teste</h1>
+
+    <!--TAG COMENTARIOS sobre o que vem abaixo-->
+    <p>Texto qualquer blablabla</p>
+    
+</body>
+</html>  

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+}
+
+p {
+    color: #0000FF;
+    font-size: 20px;
+    font-family: Helvetica;
+    text-align: left;
+    text-transform: uppercase; /*texto maiusculo*/
+    letter-spacing: 5px; /*espaço entre as letras*/
+    word-spacing: 20px; /*espaço entre palavras */
+    line-height: 30px; /*altura da linha*/
+    text-shadow: 0px 2px 3px #FF0000;/*sombra no texto-> |distância direita sombra|pra baixo vai a letra|espaço de esfumaçamento da cor|cor da sombra|*/
+}

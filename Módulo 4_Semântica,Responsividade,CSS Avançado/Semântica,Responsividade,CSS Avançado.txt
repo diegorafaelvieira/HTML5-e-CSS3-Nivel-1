@@ -1,0 +1,1013 @@
+---> INTRODUÇÃO À RESPONSIVIDADE
+Mais de 50% são pelo celular
+
+
+--->DIFERENÇA DE ARQUIVO
+index.php por index.html
+
+
+--->TAG HEADER, FOOTER E NAV
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Teste</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header> <!--CABEÇALHO PÁGINA-->
+        <h1>Título da Página</h1>
+        <p>Subtítulo</p>
+    </header>
+
+    <nav> <!--MENU PRINCIPAL DA PÁGINA / NAVEGAÇÃO SITE PESSOAS ESPECIAIS-->
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+    </nav>
+
+    <footer>   <!--RODAPÉ SITE-->
+        <!--quem criou / ano atual-->
+        Rodapé da página
+    </footer>
+
+</body>
+</html>
+
+body {
+    margin: 0;
+}
+
+footer {
+    height: 100px;
+    background-color: #CCCCCC;
+}
+
+nav {
+    height: 50px;
+    background-color: #999999;
+}
+
+
+--->TAG SECTION, ARTICLE, ASIDE E TIME
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Teste</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <section> <!--SEPARAR O CONTEÚDO DO ASSUNTO TRATADO-->
+
+    </section>
+
+    <article> <!--CONTEÚDO PRINCIPAL DO SITE-->
+
+    </article>
+
+    <aside> <!--CONTEÚDO SECUNDÁRIO DA PÁGINA-->
+
+    </aside>
+
+
+    O meu dia preferido é o <time datetime="1984-07-05"> <!--REFERE ALGUMA DATA OU TEMPO-->dia do meu aniversário.</time>
+
+</body>
+</html>
+
+
+--->COMPATIBILIDADE COM HTML5
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Teste</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    
+   <diego>Esse sou eu.</diego> <!--CRIANDO MINHA TAG / Não funciona no Internet Explorer 8-->
+
+</body>
+</html>
+
+body {
+    margin: 0;
+}
+
+diego {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+
+--->TAGS INPUT
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Teste</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <form method="POST"> 
+        <input type="search" name="search" /> <!--INPUT DE PESQUISA--> <br/>
+        <input type="email" name="email" required /> <!--INPUT DE EMAIL / só manda se for preenchido--> <br/>
+        <input type="url" name="url" /> <!-- INPUT DE URL--> <br/>
+        <input type="tel" name="tel" /> <!-- INPUT TELEFONE--> <br/>
+        <input type="number" name="number" /> <!-- INPUT NÚMERO--> <br/>
+        <input type="range" min="1" max="100" /> <!--INPUT RANGE--> <br/>
+        <input type="date" /><!--INPUT DE DATA--> <br/>
+        <input type="month" /><!--INPUT MÊS--> <br/>
+        <input type="week" /><!--INPUT SEMANA--> <br/>
+        <input type="time" /><!-- INPUT HORA--> <br/>
+        <input type="datetime-local" /> <!--INPUT DATA E HORA--> <br/>
+        <input type="color" /><!--INPUT COR--> <br/>
+
+        <input type="submit" value="Enviar" /> <!-- BOTÃO-->
+    </form>
+</body>
+</html>
+
+
+--->ATRIBUTO DATA
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Teste</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <div data-nome="Diego Rafael" data-sobrenome="Vieira">Oi, tudo bom?</div>
+    <!--SALVAR INFORMAÇÕES MAS NÃO MOSTRA NA TELA-->
+
+</body>
+</html>
+
+
+--->TAG VÍDEO
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Teste</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <video width="480" height="270" autoplay controls><!-- CRIA PLAYER DE VÍDEO NO SITE-->
+        <source src="megaman.mp4" type="video/mp4"/><!--ARQUIVO VÍDEO-->
+        <source src="megaman.ogg" type="video/ogg"/>
+    </video>
+
+</body>
+</html>
+
+--->TAG AÚDIO
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Página Teste</title>
+        <link href="estilo.css" rel="stylesheet" />
+    </head>
+    <body>
+        <audio controls >
+            <source src="Mario Song.mp3" type="audio/mpeg" /> <!--Arquivo mp3 |Suporta OGG e WAV também-->
+        </audio>
+    </body>
+</html>
+
+
+--->MEDIA QUERY
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Teste</title>
+    <link href="estilo3.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="teste">..</div>
+</body>
+</html>
+
+body {
+    margin: 0;
+}
+
+.teste {
+    width: 600px;
+    height: 300px;
+    background-color: red;
+}
+
+@media only screen and (min-width:200px) and (max-width:600px) {
+
+    .teste {
+        width: 200px;
+        background-color: green;
+    }
+}
+
+
+--->DESIGN RESPONSIVO 1
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página Teste</title>
+    <link href="estilo4.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="topo">
+        <div class="logo"></div>
+        <div class="menu"></div>
+    </div>
+    <div class="corpo"></div>
+    <div class="rodape"></div>
+</body>
+
+</html>
+
+body {
+    margin: 0;
+}
+
+/* PRIMEIRA VERSÃO RESPONSIVIDADE
+.topo {
+    width: 800px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #EEE;
+}
+
+.menu {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #DDD;
+}
+
+.corpo {
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    background-color: #CCC;
+}
+
+.rodape {
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    background-color: #DDD;
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+
+    .topo {
+        width: 500px;
+    }
+
+    .corpo {
+        width: 500px;
+    }
+
+    .rodape {
+        width: 500px;
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+
+    .topo {
+        height: 200px;
+        width: 300px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .corpo {
+        width: 300px;
+    }
+
+    .rodape {
+        width: 300px;
+    }
+
+}
+*/
+
+.topo {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #EEE;
+}
+
+.menu {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #DDD;
+}
+
+.corpo {
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    margin: auto;
+    background-color: #CCC;
+}
+
+.rodape {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+    background-color: #DDD;
+}
+
+@media only screen and (max-width:400px) {
+
+    .topo {
+        height: 200px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
+
+
+--->DESIGN RESPONSIVO 2
+
+//EXEMPLO 1
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Design Responsivo 2</title>
+    <link href="estilo5.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="topo">
+        <h1>Guia Turístico</h1>
+    </div>
+    <div class="cidade">
+        <h3>Cidade 1</h3>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. In elementis mé pra quem é amistosis quis leo. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</p>
+    </div>
+    <div class="cidade">
+        <h3>Cidade 2</h3>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. In elementis mé pra quem é amistosis quis leo. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</p>
+    </div>
+    <div class="cidade">
+        <h3>Cidade 3</h3>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. In elementis mé pra quem é amistosis quis leo. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</p>
+    </div>
+    <div class="cidade">
+        <h3>Cidade 4</h3>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. In elementis mé pra quem é amistosis quis leo. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</p>
+    </div>
+
+</body>
+
+</html>
+
+body {
+    margin: 0;
+}
+
+p {
+    padding: 10px;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+.topo {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: orange;
+    text-align: center;
+}
+
+.cidade {
+    width: 25%;
+    float: left;
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+
+    .cidade {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+
+    .cidade {
+        width: 100%;
+    }
+}
+
+//EXEMPLO 2
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desing Responsivo 2.2</title>
+    <link href="estilo52.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="topo">
+        <h1>Guia Turístico</h1>
+    </div>
+
+    <div class="menu">
+        <div class="menumobile">
+            <img src="menu.png" width="30px" border="0" />
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="center">
+        <h2>O Título</h2>
+        Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Diuretics paradis num copo é motivis de denguis. Aenean aliquam molestie leo, vitae iaculis nisl.
+        <img src="http://www.google.com.br/google.jpg" width="" height="" />
+    </div>
+
+    <div class="rightside">
+
+    </div>
+
+    <div class="rodape"></div>
+
+</body>
+</html>
+
+body {
+    margin: 0;
+}
+
+p {
+    padding: 10px;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+.menumobile {
+    display: none;
+    height: 30px;
+    text-align: center;
+}
+
+.site {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #FFF;
+}
+
+.topo {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: orange;
+    text-align: center;
+}
+
+.menu {
+    width: 25%;
+    height: 300px;
+    float: left;
+}
+
+.menu ul,
+.menu li{
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #CCC;
+    padding-left: 10px;
+}
+
+.center {
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+.rightside {
+    width: 25%;
+    height: 300px;
+    float: right;
+    background-color: #DDD;
+}
+
+.rodape {
+    clear: both;
+    height: 80px;
+    background-color: #CCC;
+}
+
+@media only screen and (min-width:500px) and (max-width:700px ) {
+
+    .center {
+        width: 75%;
+    }
+
+    .rightside {
+        width: 75%;
+        height: 100px;
+    }
+    
+}
+
+@media only screen and (max-width:500px) {
+
+    .menu {
+        width: 100%;
+        height: 30px;
+    }
+
+    .menumobile {
+        display: block;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .rightside {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+
+--->VIEWPORT
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desing Responsivo 2.2</title>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"> <!-- VIEWPORT como navegador interpreta | usuário não da zoom-->
+    <link href="estilo52.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="topo">
+        <h1>Guia Turístico</h1>
+    </div>
+
+    <div class="menu">
+        <div class="menumobile">
+            <img src="menu.png" width="30px" border="0" />
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="center">
+        <h2>O Título</h2>
+        Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Diuretics paradis num copo é motivis de denguis. Aenean aliquam molestie leo, vitae iaculis nisl.
+        <img src="http://www.google.com.br/google.jpg" width="" height="" />
+    </div>
+
+    <div class="rightside">
+
+    </div>
+
+    <div class="rodape"></div>
+
+</body>
+</html>
+
+
+--->PLACEHOLDER
+<html>
+    <head>
+        <title>Placeholder</title>        
+        <link href="estilo6.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <form method="POST">
+            Usuário:<br/>
+            <input type="text" name="usuario" placeholder="Usuário"/><br/><br/>
+
+            Senha:<br/>
+            <input type="password" name="senha" placeholder="Digite a senha" /><br/><br/>
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>
+
+
+--->AUTOFOCUS
+<html>
+
+<head>
+    <title>Autofocus</title>
+    <link href="estilo6.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form method="POST">
+        Usuário:<br />
+        <input type="text" name="usuario" placeholder="Usuário" autofocus /><br /><br />
+
+        Senha:<br />
+        <input type="password" name="senha" placeholder="Digite a senha" /><br /><br />
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
+
+--->SIZE e MAXLENGTH
+<html>
+
+<head>
+    <title>SIZE E MAXLENGHT</title>
+    <link href="estilo7.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form method="POST">
+        Usuário:<br />
+        <input type="text" name="usuario" placeholder="Usuário" size="10" /><br /><br /> <!--TAMANHO INPUT-->
+
+        Senha:<br />
+        <input type="password" name="senha" placeholder="Digite a senha" maxlength="5"/><br /><br /> <!-- MÁXIMO DE CARACTERES NO CAMPO-->
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
+
+--->REQUIRED INPUT
+<html>
+
+<head>
+    <title>REQUIRED INPUT</title>
+    <link href="estilo7.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form method="POST">
+        Usuário:<br />
+        <input type="text" name="usuario" placeholder="Usuário" required /><br /><br /> <!--VALIDAR CAMPO-->
+
+        Senha:<br />
+        <input type="password" name="senha" placeholder="Digite a senha" /><br /><br /> 
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
+
+
+--->AUTOCOMPLETE
+<html>
+
+<head>
+    <title>Autocomplete</title>
+    <link href="estilo7.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form method="POST">
+        Usuário:<br />
+        <input type="text" name="usuario" placeholder="Usuário" autocomplete="on" /><br /><br /> <!--ON LIGA O AUTOCOMPLETE / OFF DESLIGA-->
+
+        Senha:<br />
+        <input type="password" name="senha" placeholder="Digite a senha" /><br /><br />
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
+
+
+--->NORMALIZE.CSS 
+
+https://github.com/necolas/normalize.css/
+
+Site reset css
+
+
+--->BORDA ARREDONDADA
+<html>
+    <head>
+        <title>Bordas Arredondadas</title>
+        <link rel="stylesheet" href="estilo8.css">
+    </head>
+
+    <body>
+        <div id="teste"></div>
+        <input type="text" />
+    </body>
+</html>
+
+body {
+    margin: 0;
+}
+
+#teste {
+    background-color: green;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; /*Aqui faz a borda arredondada*/ 
+    border-top-left-radius: 50px; /* Arredonda borda esquerda do topo */
+    /*
+    border-top-right-radius: ; Arredonda borda direita do topo
+    border-bottom-left-radius: ; Arredonda borda esquerda inferior
+    border-bottom-right-radius:  ; Arredonda borda direita inferior
+    */
+}
+
+input {
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
+
+
+--->DEGRADÊ
+<html>
+    <head>
+        <title>Degradê</title>
+        <link href="estilo9.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="exemplo"></div>
+    </body>
+</html>
+
+body {
+    margin: 0;
+}
+
+.exemplo {
+    width: 500px;
+    height: 200px;
+    background:blue; /*FAZ O DEGRADÊ*/
+    background: linear-gradient(white,blue); /*DireçãoEmGraus-1cor-2cor*/
+    /*background: linear-gradient(90deg ou-90deg,white,blue); */
+    background:-moz-linear-gradient(white,blue); /*FIREFOX ANTIGO*/
+    background:-o-linear-gradient(white,blue); /*OPERA ANTIGO*/
+    background:-webkit-linear-gradient()/*SAFARI ANTIGO*/
+}
+
+
+--->ANIMAÇÕES 
+<html>
+    <head>
+        <title>Animações</title>
+        <link href="estilo10.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="exemplo"></div>
+    </body>
+
+</html>
+
+/* Animações */
+@keyframes exemplo {
+    0% {background-color: red;top: 0;left: 0;}
+    25%{background-color: yellow;top: 0;left: 200;}
+    50%{background-color: blue;top: 200;left: 200;}
+    75%{background-color: green;top: 200;left: 0;}
+    100%{background-color: red;top: 0;left: 0;}
+}
+
+
+body {
+     margin: 0;
+ }
+
+ .exemplo {
+     width: 150px;
+     height: 150px;
+     background-color: red;
+     position: absolute;
+     animation-name: exemplo; /*nome da animação*/
+     animation-duration: 4s; /*duração da animação*/
+     animation-delay: 2s; /*aguarda 2 segundos paracomeçar a animação*/
+     animation-iteration-count: 3; /*repete a animação 3 vezes | infinite caso loop infinito*/
+ }
+
+
+--->SOMBRAS
+<html>
+    <head>
+        <title>Sombras</title>
+        <link href="estilo11.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="exemplo"></div>
+        <div class="exemplo2">Opa,tudo bem?</div>
+    </body>
+
+</html>
+
+body {
+    margin: 0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 5px  #888888; /*distancia horizontal, distania vertical, esfumaçamento, cor   */
+    /*box-shadow: aplica sombra em elementos*/
+}
+
+.exemplo2 {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 100px;
+    color: green;
+    text-shadow: 2px 2px 3px #888888 ;/*direita,baixo,blur,cor */
+    /*text-shadow: aplica sombra no texto*/ 
+}
+
+
+
+--->TRANSIÇÕES
+<html>
+    <head>
+        <title>Transições</title>
+        <link href="estilo12.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="exemplo"></div>
+        <a href="">Clique aqui no meu link</a>
+    </body>
+
+</html>
+
+
+body{
+    margin: 0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: auto;
+    margin-top: 100px;
+    transition: all 1s linear;/* TRANSIÇÃO | qual propriedade aplica,tempo,velocidade */
+}
+
+.exemplo:hover {
+    width: 300px;
+    background-color:red;
+}
+
+a {
+    color: #000;
+    transition:all 1s linear;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+
+--->WEBKIT 
+<html>
+    <head>
+        <title>Webkit</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="exemplo"></div>
+
+        ->ENGINES
+        IE = Trident
+        Edge = EdgeHTML
+        Firefox = Gecko
+        Opera = Webkit
+        Safari = Webkit
+        Chrome = Webkit -> Blink
+
+    </body>
+</html>
+
+
+--->WORDWRAP
+<html>
+    <head>
+        <title>Wordwrap</title>
+        <link rel="stylesheet" href="estilo13.css">
+    </head>
+    <body>
+        <div class="exemplo">
+            This paragraph contains a very long word: thisisaveryveryveryveryveryveryveryverylongword. The long word willbreak and wrap to the next line.  
+        </div>
+    </body>
+</html>
+
+body {
+    margin: 0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    word-wrap: break-word;/* Quebra a palavra | normal ou break-word(quebra a palavra)*/
+}
+
+
+---> META TAG (SOCIAL SHARING)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--Padrão-->
+    <meta property="og:url" content="http://www.b7web.com.br/metashare/" /><!--Link artigo/site-->
+    <meta property="og:type" content="article" /> <!--Tipo site article,product,website  padrão é website-->
+    <meta property="og:title" content="Título do noso artigo" /><!--Título-->
+    <meta property="og:description" content="Descrição qualquer do nosso artigo" /><!--Descrição-->
+    <meta property="og:image" content="http://www.b7web.com.br/metashare/titulo_teste.jpg" /> <!--Imagem padrao 1200 x 630 com 5 mega-->
+    <title>Meta Tag Social Sharing</title>
+</head>
+<body>
+    Página de testes...
+</body>
+</html>
+

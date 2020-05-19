@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #0000FF;
+    font-size: 20px;
+    font-family: 'Chilanka';
+}
+
+
+h1 {
+    font-family: 'Indie Flower';
+}

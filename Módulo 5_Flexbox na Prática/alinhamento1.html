@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style type="text/css">
+            .container {
+                display: flex;
+                height: 500px;
+                /*flex-wrap: wrap; /* quebra o flex para uma nova linha*/
+                /*flex-flow: row wrap;/*alinhamento flex direction e wrap  FAZ O MESMO QUE ACIMA*/
+                background-color: #DDDDDD;
+                flex-direction: row; /*alinhamento horizontal da linha*/
+                justify-content: center;/*alinha conteudo dentro do container|alinha na direção que esta sendo exibido*/
+                /*flex-start:alinha no começo
+                  flex-end: alinha no final
+                  space-around: alinha de forma que o espaçamento entre eles seja igual 
+                  space-beetwen: alinha o 1 e último colados nas bordas */
+                align-items: center;/*alinhar na linha e na coluna | alinha na direção contrária da exibição */
+            }
+
+            .container div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                margin: 10px;
+                padding:10px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </body>
+</html>

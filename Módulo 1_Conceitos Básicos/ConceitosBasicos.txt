@@ -1,0 +1,43 @@
+#LEMBRETE TERMINAL LINUX
+cd "Área de Trabalho"
+cd "HTML5 e CSS3 Nível 1"
+
+﻿------> O QUE É TAG?
+
+<h1>Seja bem vindo(a)</h1> <!--CABEÇALHO-->
+<h2>Digitando algo</h2> <!--CABEÇALHO-->
+<h4>Outro texto</h4> <!--CABEÇALHO-->
+
+<hr/> <!--LINHA HORIZONTAL-->
+
+<p>Algum texto qualquer</p>
+<strong>Texto legal</strong> <!--NEGRITO -->
+<u>Texto legal 2</u> <!--SUBLINHADO-->
+<strong>Texto <u>legal</u></strong>
+
+
+
+
+---> ATRIBUTOS
+<h1>Seja Bem Vindo(a)</h1>
+
+<!-- TAG ATRIBUTOS-->
+<a href="https://www.google.com.br">Clique aqui para entrar no Google</a> <!-- TAG LINK-->
+<img src="https://www.google.com.br/google.jpg" width="400px" height="100px"/><!--TAG IMAGEM COM TAMANHO largura/altura-->
+
+
+
+---> ESTRUTUTURA BÁSICA
+<!DOCTYPE html> 
+<html>
+    <head> <!--CABEÇALHO-->
+        <meta charset="UTF-8" /> <!--ACENTUAÇÃO-->
+        <title>Página de teste</title><!--TÍTULO-->
+    </head>
+    <body><!--CORPO-->
+        O que aparece no site.
+    </body>
+</html>
+
+
+--->

@@ -1,0 +1,44 @@
+/* SELECIONA TODOS OS H1 */
+/*
+h1 { 
+    color: black;
+} 
+
+/*
+img {
+    width: 200px;
+}
+
+
+/* SELECIONA APENAS O H1 ID titulo*/ /* ID só pode ter 1 elemento com esse título */
+/*
+#titulo {
+    color: green;
+}
+/* SELECIONAR POR CLASS*/ /* CLASS pode ter quantos elementos desejar */
+/*
+.texto {
+    color: red;
+}
+
+
+
+/* SELEÇÃO GERAL DOS ITENS */
+#titulo,
+.texto {
+    color:blue;
+    font-size: 25px;;
+}
+
+#titulo {
+    font-weight: normal;
+}
+
+.texto {
+    font-weight: bold;
+}
+
+/* SELECIONAR 1 ITEM DENTRO DE OUTRO ITEM */
+ol li { /* só coloca no elemento li */
+    color: pink;
+}

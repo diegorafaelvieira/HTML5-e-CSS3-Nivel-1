@@ -1,0 +1,41 @@
+a {
+  display: block;
+}
+
+div {
+  margin: 20px;
+  height: 30px;
+}
+
+/*  Seleciona links que começam com  http */
+a[href^="http:"] {
+  background-color: yellow;
+  color: black;
+}
+
+/* Seleciona links que começam com  https */
+a[href^="https:"] {
+  background-color: purple;
+}
+
+/* Seleciona atributo VAZIO */
+div:empty {
+  background-color: red;
+}
+
+/* Seleciona os links com o valor economia  */
+a[href*="economia"] {
+  background-color: blue;
+  color: yellow;
+}
+
+/* Seleciona os links com o valor games  */
+a[href*="games"] {
+  background-color: green;
+  color: white;
+}
+
+/* Seleciona itens que terminam em com */
+a[href$="com"] {
+  background-color: orange;
+}

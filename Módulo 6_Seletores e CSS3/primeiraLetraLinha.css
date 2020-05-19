@@ -1,0 +1,17 @@
+/* Selecionar 1ª LETRA */
+p::first-letter {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Selecionar 1ª LINHA */
+p::first-line {
+  background-color: yellow;
+}
+
+/* Combinar 1ª Letra e Linha */
+p::first-letter, p::first-line {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}

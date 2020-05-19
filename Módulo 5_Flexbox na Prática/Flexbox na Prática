@@ -1,0 +1,1040 @@
+---> FLEXBOX: INTRODUÇÃO E DIREÇÕES
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Flexbox</title>
+        <style type="text/css">
+
+            .container {
+                display: flex; /* ativa o flexbox*/
+                flex-direction: row; /*row=linha column=coluna  reverse = contrário*/
+                background-color: #dddddd;
+                margin: 10px;
+            }
+
+
+            .div1 {
+                flex: 1;/* grupo 1 / dividem igualmente o mesmo espaço   */
+                background-color: red;
+                margin: 10px;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .div2 {
+                flex: 1;/* grupo 1*/
+                background-color: red;
+                margin: 10px;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            
+            .div3 {
+                flex: 1;/* grupo 1 */
+                background-color: red;
+                margin: 10px;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            
+            .div4 {
+                flex: 3;/* grupo 3 / ocupa 3x o tamanho do flex grupo 1 */
+                background-color: red;
+                margin: 10px;
+                padding: 10px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+    </body>
+</html>
+
+
+--->FLEXBOX: ALINHAMENTOS(1/2)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style type="text/css">
+            .container {
+                display: flex;
+                height: 500px;
+                flex-wrap: wrap; /*quebra alinha caso não couber*/
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: #DDDDDD;
+                align-content: flex-end;/*alinhamento paa todo o conteúdo que quebrou linha*/
+            }
+
+            .container div {
+                width: 100px;
+                height: 100px;
+                background-color: #FF0000;
+                margin: 10px;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .div10 {
+                align-self: flex-start;/*alinhamento especifico*/
+                order: -1;/*mudar a ordem | coloca no inicio da fila*/
+            }
+
+            .div14 {
+                order: 2;/*as divs sem ordem são de ordem ZERO*/
+            }
+        </style>
+    </head>
+
+    <body>
+    
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="div10">10</div c>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div class="div14">14</div>
+            <div>15</div>
+        </div>
+    </body>
+</html>
+
+---> SITE
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalabre=0" /> <!--responsividade e sem zoom-->
+        <title>MediCenter</title>
+        <link rel="stylesheet" type=text/css href="assets/css/template.css">
+
+        <script type="text/javascript">
+            window.onload = function() {
+                document.querySelector(".menuMobile").addEventListener("click", function() {
+                    if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    }
+                    else {
+                        document.querySelector(".menu nav ul").style.display = 'flex'
+                    }
+                })
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <header> <!--cabeçalho-->
+
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="assets/images/logo.png" /></a>
+                </div>
+
+                <div class="menu">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                        <ul>
+                            <li class="active"><a href="">HOME</a></li> <!--menu ativo-->
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header> <!--cabeçalho fim-->
+
+        <section id="banner">
+            
+            <div class="container column">
+                <div class="banner_headline">
+                    <h1>Top notch experience</h1>
+                    <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+                </div>
+
+                <div class="banner_options">
+                    <div class="banner1">
+                        <div class="banner_title">
+                            Emergency Case
+                        </div>
+                        <div class="banner_desc">
+                            If you need doctor urgently outside of medicenter opening hours, call emergency appointment number for emergency service.
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <div class="banner2">
+                        <div class="banner_title">
+                            Doctor Timetable
+                        </div>
+                        <div class="banner_desc">
+                            Here at medicenter we have individual doctor's lists. Click read mor below to see services and current timetable for our doctors.
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <div class="banner3">
+                        <div class="banner_title">
+                            Opening Hours
+                        </div>
+                        <div class="text_hours">
+                            <div class="text">Monday  -  Friday</div>
+                            <div class="hours">8.00  -  17.00</div>
+                        </div>
+                        <div class="text_hours">
+                            <div class="text">Saturday</div>
+                            <div class="hours">9.30  -  17.30</div>
+                        </div>
+                        <div class="text_hours">
+                            <div class="text">Sunday</div>
+                            <div class="hours">9.30  -  15.00</div>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="geral">
+
+            <div class="container">
+
+                <section>
+                    
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest News</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+
+                        <div class="widget_body flex">
+                            
+                            <article>
+                                <a href="">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 DEC 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images/crianca-medico.jpg" />
+                                    </div>
+                                    <div class="news_title">Lorem Ipsum dolor sit amat velum</div>
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted
+                                        by readable content of a page when looking at its layout.
+                                        The point of using Lorem Ipsum is that it has a more-or-less
+                                        normal distribution of letters, as opposed to using 'Content
+                                        here, content here', making it look like readable English.
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article>
+                                <a href="">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 DEC 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images/crianca-medico.jpg" />
+                                    </div>
+                                    <div class="news_title">Lorem Ipsum dolor sit amat velum</div>
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted
+                                        by readable content of a page when looking at its layout.
+                                        The point of using Lorem Ipsum is that it has a more-or-less
+                                        normal distribution of letters, as opposed to using 'Content
+                                        here, content here', making it look like readable English.
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article>
+                                <a href="">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 DEC 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images/crianca-medico.jpg" />
+                                    </div>
+                                    <div class="news_title">Lorem Ipsum dolor sit amat velum</div>
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted
+                                        by readable content of a page when looking at its layout.
+                                        The point of using Lorem Ipsum is that it has a more-or-less
+                                        normal distribution of letters, as opposed to using 'Content
+                                        here, content here', making it look like readable English.
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article>
+                                <a href="">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 DEC 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/images/crianca-medico.jpg" />
+                                    </div>
+                                    <div class="news_title">Lorem Ipsum dolor sit amat velum</div>
+                                    <div class="news_resume">
+                                        It is a long established fact that a reader will be distracted
+                                        by readable content of a page when looking at its layout.
+                                        The point of using Lorem Ipsum is that it has a more-or-less
+                                        normal distribution of letters, as opposed to using 'Content
+                                        here, content here', making it look like readable English.
+                                    </div>
+                                </a>
+                            </article>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <aside>
+
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Departaments</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+
+                        <div class="widget_body" id="departaments">
+                                <div class="departament"></div>
+                                <div class="departament"></div>
+                                <div class="departament"></div>
+                                <div class="departament"></div>
+                                <div class="departament"></div>
+                                <div class="departament"></div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Make An Appointment</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+
+                        <div class="widget_body" id="appointment">
+                            <div class="appointment_text">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Ut volupat rutrum eros sit amet sollictudin.</div>
+                            <div class="appointment_item">
+                                <div class="appointment_img">
+                                    <img src="assets/images/telefone.png" width="25px" height="25px" ></div>
+                                    <div class="appointment_info">by phone: 1-800-643-4300</div>
+                                </div>
+                            </div>
+                            <div class="appointment_item">
+                                <div class="appointment_img">
+                                    <img src="assets/images/email.png" width="25px" height="25px" ></div>
+                                    <div class="appointment_info">by e-mail:<a href="">medicenter@mail.com</a></div>
+                                </div>
+                            </div>
+                            <div class="appointment_item">
+                                <div class="appointment_img">
+                                    <img src="assets/images/formulario.png" width="25px" height="25px" ></div>
+                                    <div class="appointment_info">or <a href="">fill int the form</a> on our contact page</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>            
+
+        </section>
+
+        <footer>
+
+            <div class="container flexColumn">
+                <div class="footer_menu">
+                    <div class="fm_1">
+                        <a href="">
+                            <div class="banner_title">
+                                Health Insurance
+                            </div>
+                            <div class="banner_desc">
+                                <div class="fm_desc">Here in medicenter we have individual  -></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fm_2">
+                        <a href="">
+                            <div class="banner_title">
+                                Medical Records
+                            </div>
+                            <div class="banner_desc">
+                                <div class="fm_desc">Here in medicenter we have individual  -></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fm_3">
+                        <a href="">
+                            <div class="banner_title">
+                                Online Bill Pay
+                            </div>
+                            <div class="banner_desc">
+                                <div class="fm_desc">Here in medicenter we have individual  -></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer_area">
+                    <div class="footer_areaitem">
+                        <div class="widget">
+                            <div class="widget_title">
+                                <div class="widget_title_text">Medicenter Clinic</div>
+                                <div class="widget_title_bar"></div>
+                            </div>
+    
+                            <div class="widget_body">
+                                <div class="footerAreaText">
+                                    Mauris adipiscing mauris fringilla turpis interdum
+                                    sed pulvinar nisi malesuada individual.
+                                </div>
+                            </div>
+
+                            <div class="widget_body">
+                                <div class="footerContacts">
+                                    <div>Medicenter Clinic</div>
+                                </div>
+                                <div class="footerContacts">
+                                    <div>33 Farlane Street</div>
+                                    <div class="num">+123 655 655</div>
+                                </div>
+                                <div class="footerContacts">
+                                    <div>Keilor East</div>
+                                    <div class="num">+123 755 755</div>
+                                </div>
+                                <div class="footerContacts">
+                                    <div>VIC 3033,Australia</div>
+                                    <div><a href="">medicenter@mail.com</a></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="midia">
+                                <div class="midiaItem">
+                                    <a href=""><img src="assets/images/facebook.png" /></a>
+                                </div>
+                                <div class="midiaItem">
+                                    <a href=""><img src="assets/images/twitter.png" /></a>
+                                </div>
+                                <div class="midiaItem">
+                                    <a href=""><img src="assets/images/video.png" /></a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_areaitem">
+                        <div class="widget">
+                            <div class="widget_title">
+                                <div class="widget_title_text">Latest Posts</div>
+                                <div class="widget_title_bar"></div>
+                            </div>
+    
+                            <div class="widget_body">
+                                <div class="footerPost">
+                                    <div class="footerPostText">
+                                        -> Mauri adipiscing mauris fringilla turpis interdum 
+                                        pulvinar misi malesuada.
+                                    </div>
+                                    <div class="footerPostTime">
+                                        6 years ago
+                                    </div>
+
+                                    <div class="footerPostText">
+                                        -> Lorem ipsum dolor sit amat velum.
+                                    </div>
+                                    <div class="footerPostTime">
+                                        6 years ago
+                                    </div>
+
+                                    <div class="footerPostText">
+                                        -> Mauri adipiscing mauris fringilla turpis interdum 
+                                        pulvinar misi malesuada.
+                                    </div>
+                                    <div class="footerPostTime">
+                                        6 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_areaitem">
+                        <div class="widget">
+                            <div class="widget_title">
+                                <div class="widget_title_text">Latest Tweets</div>
+                                <div class="widget_title_bar"></div>
+                            </div>
+    
+                            <div class="widget_body">
+                                <div class="footerPost">
+                                    <div class="footerPostText">
+                                        -> Lorem ipsum dolor sit amet, consectetur #dev #smart #lorem #ipsum
+                                    </div>
+                                    <div class="footerPostTime">
+                                        6 years ago
+                                    </div>
+
+                                    <div class="footerPostText">
+                                        -> Lorem ipsum dolor sit amet, consectetur #dev #smart #lorem #ipsum
+                                    </div>
+                                    <div class="footerPostTime">
+                                        6 years ago
+                                    </div>
+
+                                    <div class="footerPostText">
+                                        -> Lorem ipsum dolor sit amet, consectetur #dev #smart #lorem #ipsum
+                                    </div>
+                                    <div class="footerPostTime">
+                                        6 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_copy">
+                    &copy; Todos os direitos reservados 
+                </div>
+            </div>
+            
+
+        </footer>
+    </body>
+</html>
+
+
+
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* . = class  # = id  */
+
+header { /*com flexbox*/
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container { 
+    display: flex;
+    justify-content: space-between; /*um em cada lado*/
+    width: 990px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /*coloca logo no centro*/
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block; /*alterar tamanhos*/
+    padding: 15px; /*espaços menus*/
+    text-decoration: none; /*tira sublinhado*/
+    text-transform: uppercase; /*texto maiusculo*/
+    color: #727272;/*cor texto*/
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #39AAE1;
+    color: white;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover; /*imagem expande para preencher espaço*/
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1 {
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+
+.banner_headline h2 {
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+} 
+
+.banner1 {
+    background-color: #39AAE1;
+}
+
+.banner2 {
+    background-color: #0079C7;
+}
+
+.banner3 {
+    background-color: #2B4C99;
+}
+
+.banner_title {
+    font-size: 21px;
+}
+
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.text_hours {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 15px;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text {
+    color:black;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #39AAE1;
+    margin-top: 10px;
+}
+
+#departaments {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.departament {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    background-color: #39AAE1;
+}
+
+#appointment {
+    color: #888888;
+    font-size: 14px;
+}
+
+.appointment_text {
+    margin-bottom: 30px;
+}
+
+.appointment_item {
+    display: flex;
+    border-top: 1px solid #E0E0E0;
+    color: #888888;
+    font-size: 14px;
+}
+
+.appointment_info {
+    line-height: 53px;
+}
+
+.appointment_img {
+    padding-top: 13px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.appointment_info a {
+    color: #3156A3;
+    text-decoration: none;
+}
+
+.appointment_info a:hover {
+    border-bottom: 1px solid #3156A3;
+}
+
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at {
+    background-color: #2B4C99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news_comments {
+    background-color: #39AAE1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: black;
+}
+
+article .news_resume {
+    color:#5C5C5C;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu {
+    display: flex;
+    
+}
+
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.fm_1 {
+    background-color: #39AAE1;
+}
+
+.fm_2 {
+    background-color: #0079C7;
+}
+
+.fm_3 {
+    background-color: #2B4C99;
+}
+
+.footer_area {
+    display: flex;   
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.footer_areaitem {
+    flex: 1;
+    color: white;
+}
+
+footer .widget_title_text{
+    color: white;
+}
+
+.footer_copy {
+    border-top: 1px solid #2C2C2C;
+    height: 40px;
+    line-height: 40px;
+    color: #5C5C5C;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.textfooter {
+    color: #5C5C5C;
+    margin-bottom: 30px;
+}
+
+.footerAreaText {
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.footerContacts {
+    display: flex;
+    flex-direction: row;
+    color: #757575;
+    font-size: 15px;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footerContacts a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.footerContacts a:hover {
+    border-bottom: 1px solid #757575;
+}
+
+.midia {
+    margin-top: 30px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.midiaItem {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.footerPost {
+    margin-bottom: 25px;
+    font-size: 14px;
+    margin-left: 25px;
+    color: #E0E0E0;
+}
+
+.footerPostText {
+    font-size: 13px;
+    color: white;
+}
+
+.footerPostTime {
+    margin-top: 3px;
+    font-size: 13px;
+    color: #39AAE1;
+    margin-bottom: 25px;
+}
+
+.menuMobile {
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: #39AAE1;
+}
+
+/* Responsividade */
+@media (max-width:600px) {
+
+    .banner_headline{
+        padding: 20px;
+    }
+
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_copy {
+        padding-left: 20px;
+    } 
+
+    .widget_title {
+        margin-top: 100px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+

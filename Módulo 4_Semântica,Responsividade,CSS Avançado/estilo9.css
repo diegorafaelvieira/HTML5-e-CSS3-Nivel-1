@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+.exemplo {
+    width: 500px;
+    height: 200px;
+    background:blue; /*FAZ O DEGRADÊ*/
+    background: linear-gradient(white,blue); /*DireçãoEmGraus-1cor-2cor*/
+    /*background: linear-gradient(90deg ou -90deg,white,blue); */
+    background:-moz-linear-gradient(white,blue); /*FIREFOX ANTIGO*/
+    background:-o-linear-gradient(white,blue); /*OPERA ANTIGO*/
+    background:-webkit-linear-gradient()/*SAFARI ANTIGO*/
+}
