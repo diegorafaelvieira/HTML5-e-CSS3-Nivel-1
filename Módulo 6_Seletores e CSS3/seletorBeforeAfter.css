@@ -1,0 +1,40 @@
+/*Before - antes do elemento - Esquerda/Cima*/
+/*After - após o elemento - Direita/Baixo*/
+
+.balao {
+  background-color: blue;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+/*Coloca after abaixo*/
+.balao::after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+
+  border: 20px solid;
+  border-color: blue green red black;
+}
+
+
+.balao2 {
+  background-color: blue;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  margin-left: 150px;
+  border-radius: 20px;
+}
+/*Coloco after na direita*/
+.balao2::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  margin-left: 43px;
+  top: 90px;
+  border: 20px solid;
+  border-color:green red black blue;
+}

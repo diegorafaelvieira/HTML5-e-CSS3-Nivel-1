@@ -1,0 +1,9 @@
+/*Seleciono apenas o 2º item de cima para baixo*/
+div:nth-child(2) {
+  background-color: red;
+}
+
+/*Seleciono apenas o 2º item de baixo para cima*/
+div:nth-last-child(2) {
+  background-color: green;
+}
