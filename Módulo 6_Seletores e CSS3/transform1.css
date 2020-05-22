@@ -1,0 +1,21 @@
+/* Aqui coloco a div com rotação de 90º na parte inferior direita
+div {
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  right: -50px;
+  bottom: 50px;
+  transform: rotate(90deg);
+} */
+
+/* Aqui propriedades do transform SCALE, SKEW, ROTATE - são os mais utilizados na prática*/
+div {
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  /*transform: scale(1.1); */
+  /*transform: skew(20deg, 5deg); skewX e skewY */
+  /*transform: rotate(-45deg); rotateX, rotateY e rotateZ */
+}

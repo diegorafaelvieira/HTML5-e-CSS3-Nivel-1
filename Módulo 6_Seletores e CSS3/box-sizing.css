@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box; /* inclui o padding e o border dentro do tamanho do elemento */
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 10px solid green;
+  padding: 10px;
+  /*box-sizing: content-box; assim tiro o border-box */
+}
