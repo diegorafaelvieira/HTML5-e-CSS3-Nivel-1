@@ -1,0 +1,30 @@
+body {
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  text-decoration: none;
+}
+
+.botao {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(22, 104, 211);
+  color: white;
+  box-shadow: 1px 1px 2px black;
+}
+
+.botao:hover {
+  color: rgb(22, 104, 211);
+  background-color: white;
+  border: 1px solid rgb(22, 104, 211);
+}
