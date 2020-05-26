@@ -1,0 +1,42 @@
+body {
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.tabela {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+table {
+  border: 0.3px solid gray;
+}
+
+th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-color: grey;
+
+}
+
+td {
+  border: none;
+}
+
+/*Linhas PARES na tabela*/
+tr:nth-child(even) {
+  background-color: green;
+  color: white;
+}
