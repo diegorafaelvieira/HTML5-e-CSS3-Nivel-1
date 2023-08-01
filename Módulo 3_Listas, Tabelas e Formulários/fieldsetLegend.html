@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo7.css">
+  <title>Tags Fieldset e Legend</title>
+</head>
+
+<body>
+  <form method="post" action="teste.php" enctype="multipart/form-data" >
+    <input type="hidden" name="country" value="BR">
+
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label>
+        Primeiro Nome:<br />
+        <input type="text" name="name" required minlength="2" maxlength="10" />
+      </label><br />
+      <label>
+        Sobrenome:<br />
+        <input type="text" name="lastname" />
+      </label><br />
+      <label>
+        Foto:<br />
+        <input type="file" name="photo" accept="application/pdf" />
+        <!--accept="image/*     se existir file é necessário inserir o enctype="multipart/form-data"-->
+      </label><br />
+      <label>
+        Idade:<br />
+        <input type="number" name="age" step="2" min="18" max="100" />
+      </label><br />
+      <label>
+        Data de Nascimento:<br />
+        <input type="date" name="birthdate" min="2023-07-05" required />
+      </label><br />
+      <label>
+        E-mail:<br />
+        <input type="text" name="email" required pattern="(^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" title="endereço de e-mail" />
+      </label><br />
+    </fieldset>
+
+    <fieldset>
+      <legend>Dados Profissionais</legend>
+      <label>
+        Nome da Empresa:<br />
+        <input type="text" name="companyname" />
+      </label><br />
+      <label>
+        Cargo na empresa:<br />
+        <input type="text" name="companyjobtitle" />
+      </label><br />
+    </fieldset>
+
+    <input type="submit" value="Cadastrar" />
+
+  </form>
+</body>
+
+</html>
