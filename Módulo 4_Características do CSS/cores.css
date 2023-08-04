@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  background-color: hsl(147, 50%, 47%);
+  color: #ff0000;
+}
+
+h1 {
+  border: 2px solid currentColor; /*pega a cor que está no body*/
+}
