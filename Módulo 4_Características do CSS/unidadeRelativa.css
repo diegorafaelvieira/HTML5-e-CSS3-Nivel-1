@@ -1,0 +1,17 @@
+html {
+  font-size: 16px; /*16px é o valor root*/
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.box {
+  font-size: 2rem;
+}
+
+.box-interno {
+  width: 10rem;
+  height: 10rem;
+  background-color: #999;
+}

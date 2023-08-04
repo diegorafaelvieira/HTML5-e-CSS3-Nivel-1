@@ -1,0 +1,14 @@
+body {
+  font-family: Courier; /* é fonte monospace -> espaços iguais de largura*/
+}
+
+.box {
+  width: 300px;
+  background-color: #999;
+}
+
+.box-interno {
+  background-color: #333;
+  color: #fff;
+  width: 7ch; /* só funciona em fontes monospace*/
+}
