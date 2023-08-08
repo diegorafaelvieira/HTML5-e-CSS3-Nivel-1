@@ -1,0 +1,19 @@
+table, td {
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media only print { /* only print ->não exibe na impressora | only screen ->não exibe na tela
+  only all aplica para todas */
+  h1 {
+    display: none;
+  }
+
+  table, td {
+    border: 0;
+  }
+}
