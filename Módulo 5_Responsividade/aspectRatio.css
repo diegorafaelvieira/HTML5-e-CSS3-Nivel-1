@@ -1,0 +1,17 @@
+@media (aspect-ratio: 1/1) { /* valores da tela iguais*/ /*mais utilizado*/
+  body {
+    background-color: #ff0000;
+  }
+}
+
+@media (min-aspect-ratio: 2/1) { /*largura com dobro do tamanho da altura*/
+  body {
+    background-color: #0000ff;
+  }
+}
+
+@media (max-aspect-ratio: 1/2) { /*altura com dobro de tamanho da largura*/
+  body {
+    background-color: #00ff00;
+  }
+}
