@@ -8,7 +8,7 @@ body {
     background-color: green;
     margin: auto;
     margin-top: 100px;
-    box-shadow: 10px 10px 5px  #888888; /*distancia horizontal, distania vertical, esfumaçamento, cor   */
+    box-shadow: 10px 10px 5px  #888888; /*distância horizontal, distância vertical, esfumaçamento, cor   */
     /*box-shadow: aplica sombra em elementos*/
 }
 
