@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 20px; 
+}
+
+.item {
+  background-color: #0000ff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}

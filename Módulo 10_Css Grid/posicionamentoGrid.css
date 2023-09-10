@@ -1,0 +1,17 @@
+.container {
+  height: 700px;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 10px; 
+  align-content: center;
+  justify-content: center;
+}
+
+.item {
+  background-color: #0000ff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
