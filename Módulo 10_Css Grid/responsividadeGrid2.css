@@ -1,0 +1,26 @@
+.container {
+  background-color: #ccc;
+  display: grid;
+  grid-gap: 10px; 
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  background-color: #0000ff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) { /* TABLET */
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) { /* CELULAR */
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
